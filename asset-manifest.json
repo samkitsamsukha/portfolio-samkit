@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio-samkit/static/css/main.34495d8f.css",
+    "main.js": "/portfolio-samkit/static/js/main.c3acd41e.js",
+    "static/media/dailydispatch.png": "/portfolio-samkit/static/media/dailydispatch.81e38e8cc65c32cbc686.png",
+    "static/media/codehelp.png": "/portfolio-samkit/static/media/codehelp.0022ddaa009f6f72e9c4.png",
+    "static/media/textutils.png": "/portfolio-samkit/static/media/textutils.a07fdef5be80cc3f4e7f.png",
+    "static/media/heroImage.jpg": "/portfolio-samkit/static/media/heroImage.d741f087aa22f9cd56e4.jpg",
+    "static/media/react.png": "/portfolio-samkit/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/github.png": "/portfolio-samkit/static/media/github.3b9e32903aa89111875d.png",
+    "static/media/html.png": "/portfolio-samkit/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/tailwind.png": "/portfolio-samkit/static/media/tailwind.e47ac876b8d4d0bba47a.png",
+    "static/media/java.png": "/portfolio-samkit/static/media/java.e238a2c40e6eaec570bc.png",
+    "static/media/c.png": "/portfolio-samkit/static/media/c.272d1cfdb06887e8671d.png",
+    "static/media/css.png": "/portfolio-samkit/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/cpp.png": "/portfolio-samkit/static/media/cpp.2de0ae20980cffd2da09.png",
+    "static/media/bootstrap.png": "/portfolio-samkit/static/media/bootstrap.602d194d2e51dd737c29.png",
+    "static/media/javascript.png": "/portfolio-samkit/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "index.html": "/portfolio-samkit/index.html",
+    "main.34495d8f.css.map": "/portfolio-samkit/static/css/main.34495d8f.css.map",
+    "main.c3acd41e.js.map": "/portfolio-samkit/static/js/main.c3acd41e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34495d8f.css",
+    "static/js/main.c3acd41e.js"
+  ]
+}
