@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-samkit/static/css/main.34495d8f.css",
-    "main.js": "/portfolio-samkit/static/js/main.c3acd41e.js",
+    "main.css": "/portfolio-samkit/static/css/main.86e283f7.css",
+    "main.js": "/portfolio-samkit/static/js/main.dec6dbb1.js",
     "static/media/dailydispatch.png": "/portfolio-samkit/static/media/dailydispatch.81e38e8cc65c32cbc686.png",
     "static/media/codehelp.png": "/portfolio-samkit/static/media/codehelp.0022ddaa009f6f72e9c4.png",
     "static/media/textutils.png": "/portfolio-samkit/static/media/textutils.a07fdef5be80cc3f4e7f.png",
@@ -17,11 +17,11 @@
     "static/media/bootstrap.png": "/portfolio-samkit/static/media/bootstrap.602d194d2e51dd737c29.png",
     "static/media/javascript.png": "/portfolio-samkit/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio-samkit/index.html",
-    "main.34495d8f.css.map": "/portfolio-samkit/static/css/main.34495d8f.css.map",
-    "main.c3acd41e.js.map": "/portfolio-samkit/static/js/main.c3acd41e.js.map"
+    "main.86e283f7.css.map": "/portfolio-samkit/static/css/main.86e283f7.css.map",
+    "main.dec6dbb1.js.map": "/portfolio-samkit/static/js/main.dec6dbb1.js.map"
   },
   "entrypoints": [
-    "static/css/main.34495d8f.css",
-    "static/js/main.c3acd41e.js"
+    "static/css/main.86e283f7.css",
+    "static/js/main.dec6dbb1.js"
   ]
 }
