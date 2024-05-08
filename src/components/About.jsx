@@ -3,7 +3,7 @@ import { FaSchool } from "react-icons/fa";
 import { RiSchoolFill } from "react-icons/ri";
 import { MdSchool } from "react-icons/md";
 
-const About = () => {
+const About = ({mode}) => {
 	const data = [
 		{
 			id: 1,
@@ -36,7 +36,7 @@ const About = () => {
 	return (
 		<div
 			name="about"
-			className="w-full md:h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+			className={`w-full md:h-screen ${mode==='dark'?'bg-gradient-to-b from-gray-800 to-black text-white':'bg-gradient-to-b from-gray-400 to-white text-gray-900'}`}
 		>
 			<div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-ful h-full">
 				<div className="pb-2">
@@ -45,9 +45,9 @@ const About = () => {
 					</p>
 				</div>
 				<p className="text-xl mt-10">
-					I am Samkit Samsukha, a passionate <span className="text-blue-300 font-semibold">Full Stack Web Developer</span>. I am
+					I am Samkit Samsukha, a passionate <span className={`${mode==='dark'? 'text-blue-300': 'text-blue-800'} font-semibold`}>Full Stack Web Developer</span>. I am
 					currently stationed at Bengaluru and looking for web development
-					projects and activities. I have been working on the <span className="text-blue-300 font-semibold">MERN stack</span> and am
+					projects and activities. I have been working on the <span className={`${mode==='dark'? 'text-blue-300': 'text-blue-800'} font-semibold`}>MERN stack</span> and am
 					flexible enough to try out the other dev tools in order to develop
 					skills.
 				</p>
@@ -59,12 +59,12 @@ const About = () => {
 				</div>
 				<div className="flex flex-col md:flex-row justify-between gap-8 items-center w-auto">
 					{data.map((data) => (
-						<div key={data.id} className="school bg-gradient-to-br from-gray-700 to-gray-700 via-gray-800 p-2 h-full w-full md:w-1/3 rounded-lg">
+						<div key={data.id} className={`${mode==='dark'?'bg-gradient-to-br from-gray-700 to-gray-800':'bg-gradient-to-br from-gray-300 to-gray-400'} p-2 h-full w-full md:w-1/3 rounded-lg`}>
               <div className="flex justify-center items-center mb-1">{data.logo}</div>
-							<h1 className="text-xl text-blue-200 mb-1 font-semibold text-center ">
+							<h1 className={`text-xl ${mode==='dark'?'text-blue-200':'text-slate-900'} mb-1 font-semibold text-center`}>
 							{data.institution}
 							</h1>
-							<p className="text-gray-300 ">{data.date}</p>
+							<p className={`${mode==='dark'?'text-blue-200':'text-blue-900 font-semibold'}`}>{data.date}</p>
 							<p className="font-bold">{data.grade}</p>
 							<p className="mt-1">{data.course}</p>
 						</div>

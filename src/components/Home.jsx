@@ -3,18 +3,18 @@ import HeroImage from "../assets/heroImage.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
-const Home = () => {
+const Home = (props) => {
 	return (
 		<div
 			name="home"
-			className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
+			className={`h-screen w-full ${props.mode==='dark'? 'bg-gradient-to-b from-black via-black to-gray-800': 'bg-gradient-to-b from-white to-gray-400'}`}
 		>
 			<div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
 				<div className="flex flex-col justify-center">
-					<h2 className="text-4xl sm:text-7xl font-bold text-white shadow">
-						I'm a <span className="text-blue-200">Full Stack</span> Developer
+					<h2 className={`text-4xl sm:text-7xl font-bold ${props.mode==='dark'?'text-white':'text-gray-900'}`}>
+						I'm a <span className={`${props.mode==='dark'? 'text-blue-200':'text-blue-900'}`}>Full Stack</span> Developer
 					</h2>
-					<p className="text-gray-500 py-4 max-w-md">
+					<p className={`${props.mode==='dark'? 'text-gray-500':'text-gray-800'} py-4 max-w-md`}>
 						I have freshly started building and designing websites. Currently, I
 						am using the React framework along with Tailwind CSS and I plan
 						to further dive deep into Express and MongoDB to have a strong grip on my backend skills.

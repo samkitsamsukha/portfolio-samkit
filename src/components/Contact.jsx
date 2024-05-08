@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Contact() {
+export default function Contact(props) {
 	const [result, setResult] = React.useState("");
 
 	const onSubmit = async (event) => {
@@ -29,9 +29,9 @@ export default function Contact() {
 	return (
 		<div
 			name="contact"
-			className="bg-gradient-to-b from-black to-gray-800 w-full h-screen p-4"
+			className={`bg-gradient-to-b ${props.mode==='dark'?'from-black to-gray-800 text-white':'from-white to-gray-400 text-gray-900'} w-full h-screen p-4`}
 		>
-			<div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+			<div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
 				<div className="pb-8">
 					<p className="text-4xl font-bold inline border-b-4 border-gray-500 p-2">
 						Contact
@@ -43,11 +43,11 @@ export default function Contact() {
 
         <div className='flex justify-center items-center'>
         <form onSubmit={onSubmit} className='flex flex-col w-full md:w-1/2'>
-					<input type="text" name="name" placeholder='Enter your name' className='p-2 bg-transparent border-2 text-white rounded-md focus:outline-none' required />
-					<input type="email" name="email" placeholder='Enter your email' className='my-4 p-2 bg-transparent border-2 text-white rounded-md focus:outline-none' required />
-					<textarea name="message" rows="10" placeholder='Enter your message' className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none' required></textarea>
+					<input type="text" name="name" placeholder='Enter your name' className='p-2 bg-transparent border border-gray-400 rounded-md focus:outline-none' required />
+					<input type="email" name="email" placeholder='Enter your email' className='my-4 p-2 bg-transparent border  border-gray-400 rounded-md focus:outline-none' required />
+					<textarea name="message" rows="10" placeholder='Enter your message' className='p-2 bg-transparent border border-gray-400 rounded-md  focus:outline-none' required></textarea>
 
-					<button type="submit" className='bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-auto flex items-center rounded-md hover:scale-105 duration-300 mt-4'>Let's talk</button>
+					<button type="submit" className={`text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-auto flex items-center rounded-md hover:scale-105 duration-300 mt-4`}>Let's talk</button>
 				</form>
 				
         </div>
