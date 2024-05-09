@@ -49,7 +49,7 @@ const Navbar = (props) => {
                     </li>
 					
                 ))}
-				<li className="mx-2"><label className="hover:cursor-pointer" onClick={props.toggleMode} htmlFor="toggleMode">{props.mode==='light'?<FaMoon />:<IoSunny size={25}/>}</label></li>
+				<li className="mx-2"><label className="hover:cursor-pointer" onClick={props.toggleMode} htmlFor="toggleMode">{props.mode==='light'?<FaMoon color="#36454F" />:<IoSunny size={20} color="#FFE134"/>}</label></li>
 			</ul>
 
             <div onClick={() => setNav(!nav)} className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden">

@@ -44,7 +44,7 @@ const SocialLinks = (props) => {
 			id: 6,
 			text: "Codeforces",
 			disp: <SiCodeforces size={30} color={`${props.mode==='dark'?'white':'black'}`} />,
-			href: "https://leetcode.com/u/samkitsamsukha/",
+			href: "https://codeforces.com/profile/samkitsamsukha",
 			style: "rounded-br-2xl",
 			stylemob: "rounded-tr-2xl",
 		},
