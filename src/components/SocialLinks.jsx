@@ -57,11 +57,11 @@ const SocialLinks = (props) => {
 					{links.map(({ id, text, disp, href, style, download }) => (
 						<li
 							key={id}
-							className={`flex justify-between items-center w-40 h-14 px-4 ${props.mode==='dark'?'bg-gray-700':'bg-white'} ml-[-105px] hover:rounded-2xl duration-300 hover:ml-[-10px] ${style}`}
+							className={`flex justify-between items-center w-40 h-14 px-4 ${props.mode==='dark'?'bg-gray-700 text-white':'bg-white text-gray-900'} ml-[-105px] hover:rounded-2xl duration-300 hover:ml-[-10px] ${style}`}
 						>
 							<a
 								href={href}
-								className="flex justify-between items-center w-full text-white"
+								className="flex justify-between items-center w-full"
 								target="_blank"
 								download={download}
 								rel="noreferrer"
@@ -81,7 +81,7 @@ const SocialLinks = (props) => {
 						>
 							<a
 								href={href}
-								className="flex justify-between items-center w-full text-white"
+								className="flex justify-between items-center w-full"
 								target="_blank"
 								download={download}
 								rel="noreferrer"
