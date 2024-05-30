@@ -11,6 +11,9 @@ import cpp from "../assets/cpp.png";
 import nodejs from "../assets/nodejs.png";
 import java from "../assets/java.png";
 import c from "../assets/c.png";
+import typescript from "../assets/typescript.png";
+import next from "../assets/nextjs.png";
+import express from "../assets/express.png";
 
 const Skills = (props) => {
 	const techs = [
@@ -78,13 +81,31 @@ const Skills = (props) => {
 			id: 11,
 			src: github,
 			title: "GitHub",
-			style: "shadow-gray-700",
+			style: props.mode ==='dark'? "shadow-gray-700" : "bg-black shadow-gray-800",
 		},
 		{
 			id: 12,
 			src: git,
 			title: "Git",
 			style: "shadow-orange-800",
+		},
+		{
+			id: 13,
+			src: typescript,
+			title: "TypeScript",
+			style: "shadow-blue-700"
+		},
+		{
+			id: 14,
+			src: next,
+			title: "Next Js",
+			style: "shadow-gray-400 bg-white"
+		},
+		{
+			id: 15,
+			src: express,
+			title: "Express Js",
+			style: props.mode ==='dark'? "shadow-gray-700 bg-white" : "shadow-black bg-white",
 		},
 	];
 
