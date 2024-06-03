@@ -46,7 +46,7 @@ const About = ({mode}) => {
 					initial={{x: -100, opacity: 0}}
 					transition={{duration: 0.5}}
 				>
-					<p className="text-4xl font-bold inline border-b-4 border-gray-500">
+					<p className={`text-4xl font-bold inline border-b-4 border-gray-500 bg-gradient-to-r bg-clip-text tracking-tight text-transparent ${mode === "dark" ?  "from-blue-300 to-pink-300 via-purple-300" : "from-blue-600 to-pink-600 via-purple-600"}`}>
 						About
 					</p>
 				</motion.div>

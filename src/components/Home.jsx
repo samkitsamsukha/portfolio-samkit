@@ -28,8 +28,7 @@ const Home = (props) => {
 					>
 						I'm a{" "}
 						<span
-							className={`bg-gradient-to-r bg-clip-text tracking-tight text-transparent ${
-								props.mode === "dark" ?  "from-blue-300 to-purple-400 via-pink-300" : "from-blue-600 to-purple-600 via-pink-600"
+							className={`bg-gradient-to-r bg-clip-text tracking-tight text-transparent ${props.mode === "dark" ?  "from-blue-300 to-purple-400 via-pink-300" : "from-blue-600 to-purple-600 via-pink-600"
 							}`}
 						>
 							Full Stack
