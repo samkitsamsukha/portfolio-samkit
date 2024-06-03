@@ -4,6 +4,7 @@ import textutils from "../assets/portfolio/textutils.png";
 import dailydispatch from "../assets/portfolio/dailydispatch.png";
 import expense from "../assets/portfolio/expense.png";
 import rfiddirect from "../assets/portfolio/rfiddirect.png";
+import { motion } from "framer-motion";
 
 const Portfolio = ({ mode }) => {
 	const portfolios = [
@@ -64,15 +65,23 @@ const Portfolio = ({ mode }) => {
 			} w-full md:h-screen `}
 		>
 			<div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-				<div className="pb-8">
+				<motion.div
+					className="pb-8"
+					whileInView={{ x: 0, opacity: 1 }}
+					initial={{ x: -100, opacity: 0 }}
+					transition={{ duration: 0.5 }}
+				>
 					<p className="text-4xl font-bold inline border-b-4 border-gray-500">
 						Portfolio
 					</p>
 					<p className="text-xl py-6">Check out some of my work over here!</p>
-				</div>
+				</motion.div>
 				<div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
 					{portfolios.map(({ id, src, desc, title, code, demo, tech = [] }) => (
-						<div
+						<motion.div
+							whileInView={{ y: 0, opacity: 1 }}
+							initial={{ y: 100, opacity: 0 }}
+							transition={{ duration: 0.5 }}
 							key={id}
 							className={`shadow-md rounded-lg shadow-gray-600 ${
 								mode === "dark"
@@ -97,7 +106,9 @@ const Portfolio = ({ mode }) => {
 									{tech.map((item, index) => (
 										<span
 											key={index}
-											className="px-2 py-1 bg-gray-700 rounded-xl text-[12px]"
+											className={`px-2 py-1 ${
+												mode === "dark" ? "bg-gray-700" : "bg-gray-100"
+											} rounded-xl text-[12px]`}
 										>
 											{item}
 										</span>
@@ -132,7 +143,7 @@ const Portfolio = ({ mode }) => {
 									</a>
 								</div>
 							</div>
-						</div>
+						</motion.div>
 					))}
 				</div>
 			</div>

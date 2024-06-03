@@ -2,6 +2,7 @@ import React from "react";
 import { FaSchool } from "react-icons/fa";
 import { RiSchoolFill } from "react-icons/ri";
 import { MdSchool } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const About = ({mode}) => {
 	const data = [
@@ -39,11 +40,21 @@ const About = ({mode}) => {
 			className={`w-full md:h-screen ${mode==='dark'?'bg-gradient-to-b from-gray-800 to-black text-white':'bg-gradient-to-b from-gray-400 to-white text-gray-900'}`}
 		>
 			<div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-ful h-full">
-				<div className="pb-2">
+				<motion.div 
+					className="pb-2"
+					whileInView={{x: 0, opacity: 1}}
+					initial={{x: -100, opacity: 0}}
+					transition={{duration: 0.5}}
+				>
 					<p className="text-4xl font-bold inline border-b-4 border-gray-500">
 						About
 					</p>
-				</div>
+				</motion.div>
+				<motion.div 
+					whileInView={{x: 0, opacity: 1}}
+					initial={{x: -100, opacity: 0}}
+					transition={{duration: 0.5}}
+				>
 				<p className="text-xl mt-10">
 					I am Samkit Samsukha, a passionate <span className={`${mode==='dark'? 'text-blue-300': 'text-blue-800'} font-semibold`}>Full Stack Web Developer</span>. I am
 					currently stationed at Bengaluru and looking for web development
@@ -51,13 +62,24 @@ const About = ({mode}) => {
 					flexible enough to try out the other dev tools in order to develop
 					skills.
 				</p>
+				</motion.div>
 				<br />
-				<div className="mb-4">
+				<motion.div 
+					className="mb-4"
+					whileInView={{x: 0, opacity: 1}}
+					initial={{x: -100, opacity: 0}}
+					transition={{duration: 0.5 }}
+				>
 					<p className="text-2xl font-bold inline border-b-2 border-gray-500">
 						Education Details
 					</p>
-				</div>
-				<div className="flex flex-col md:flex-row justify-between gap-8 items-center w-auto">
+				</motion.div>
+				<motion.div 
+					whileInView={{y: 0, opacity: 1}}
+					initial={{y: 100, opacity: 0}}
+					transition={{duration: 0.5}}
+					className="flex flex-col md:flex-row justify-between gap-8 items-center w-auto"
+				>
 					{data.map((data) => (
 						<div key={data.id} className={`${mode==='dark'?'bg-gradient-to-br from-gray-700 to-gray-800':'bg-gradient-to-br from-gray-300 to-gray-400'} p-2 h-full w-full md:w-1/3 rounded-lg`}>
               <div className="flex justify-center items-center mb-1">{data.logo}</div>
@@ -69,7 +91,7 @@ const About = ({mode}) => {
 							<p className="mt-1">{data.course}</p>
 						</div>
 					))}
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	);
