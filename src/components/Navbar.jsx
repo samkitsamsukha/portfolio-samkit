@@ -33,7 +33,7 @@ const Navbar = (props) => {
 	];
 
 	return (
-		<div className={`flex justify-between items-center w-full h-20 fixed ${props.mode==='dark'?'text-white bg-black':'text-black bg-white'} px-4`}>
+		<div className={`flex justify-between items-center w-full z-10 h-20 fixed ${props.mode==='dark'?'text-white bg-black':'text-black bg-white'} px-4`}>
 			
             <div>
 				<h1 className="text-5xl font-signature ml-2">Samkit Samsukha</h1>
