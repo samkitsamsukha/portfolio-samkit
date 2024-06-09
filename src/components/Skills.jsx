@@ -153,7 +153,7 @@ const Skills = (props) => {
 								transition={{duration: 1 }}
 								src={src} 
 								alt="" 
-								className="sm:w-20 mx-auto"
+								className="w-12 sm:w-20 mx-auto"
 							/>
 							{/* <p className="mt-4">{title}</p> */}
 						</motion.div>

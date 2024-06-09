@@ -36,7 +36,7 @@ const CodingProfile = (props) => {
                     whileInView={{ y: 0, opacity: 1 }}
 					initial={{ y: 100, opacity: 0 }}
 					transition={{ duration: 0.5 }}
-                    className="flex flex-row space-x-4"
+                    className="flex flex-col md:flex-row md:space-x-4 space-y-4 justify-center"
                 >
                     <img src={`https://leetcard.jacoblin.cool/samkitsamsukha?theme=${props.mode==='dark'?'dark':'light'}&font=Belleza&ext=contest`} width='400px' className="h-fit" alt="" />
                     <img src={`https://github-readme-stats.vercel.app/api?username=samkitsamsukha&show_icons=true&hide_border=true&theme=${props.mode==="dark"?'dark':'light'}`} width='400px' alt="" />
