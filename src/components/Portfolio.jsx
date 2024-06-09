@@ -61,7 +61,7 @@ const Portfolio = ({ mode }) => {
 			className={`pt-[70px] ${
 				mode === "dark"
 					? "bg-gradient-to-b from-black to-gray-800 text-white"
-					: "bg-gradient-to-b from-white to-gray-400 text-gray-900"
+					: "bg-gradient-to-b from-white to-gray-300 text-gray-900"
 			} w-full md:h-screen `}
 		>
 			<div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">

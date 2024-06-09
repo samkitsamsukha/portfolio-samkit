@@ -6,6 +6,7 @@ import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import { useState } from "react";
+import CodingProfile from "./components/CodingProfile";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
       <Home mode={mode} toggleMode={toggleMode}/>
       <About mode={mode} toggleMode={toggleMode}/>
       <Portfolio mode={mode} toggleMode={toggleMode}/>
+      <CodingProfile mode={mode} toggleMode={toggleMode}/>
       <Skills mode={mode} toggleMode={toggleMode}/>
       <Contact mode={mode} toggleMode={toggleMode}/>
       <SocialLinks mode={mode} toggleMode={toggleMode}/>

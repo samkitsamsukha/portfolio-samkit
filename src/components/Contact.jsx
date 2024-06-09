@@ -49,8 +49,8 @@ export default function Contact(props) {
 			name="contact"
 			className={`bg-gradient-to-b ${
 				props.mode === "dark"
-					? "from-black to-gray-800 text-white"
-					: "from-white to-gray-400 text-gray-900"
+					? "from-gray-800 to-black text-white"
+					: "from-gray-300 to-white text-gray-900"
 			} w-full h-screen p-4`}
 		>
 			<div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
@@ -77,7 +77,7 @@ export default function Contact(props) {
 							type="text"
 							name="name"
 							placeholder="Enter your name"
-							className="p-2 bg-transparent border border-gray-400 rounded-md focus:outline-none"
+							className="p-2 bg-transparent bg-white border border-gray-400 rounded-md focus:outline-none"
 							required
 						/>
 						<motion.input
@@ -87,7 +87,7 @@ export default function Contact(props) {
 							type="email"
 							name="email"
 							placeholder="Enter your email"
-							className="my-4 p-2 bg-transparent border  border-gray-400 rounded-md focus:outline-none"
+							className="my-4 p-2 bg-transparent border bg-white border-gray-400 rounded-md focus:outline-none"
 							required
 						/>
 						<motion.textarea
@@ -97,7 +97,7 @@ export default function Contact(props) {
 							name="message"
 							rows="10"
 							placeholder="Enter your message"
-							className="p-2 bg-transparent border border-gray-400 rounded-md  focus:outline-none"
+							className="p-2 bg-transparent border bg-white border-gray-400 rounded-md  focus:outline-none"
 							required
 						></motion.textarea>
 

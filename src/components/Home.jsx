@@ -11,7 +11,7 @@ const Home = (props) => {
 			className={`h-screen w-full ${
 				props.mode === "dark"
 					? "bg-gradient-to-b from-black via-black to-gray-800"
-					: "bg-gradient-to-b from-white to-gray-400"
+					: "bg-gradient-to-b from-white to-gray-300"
 			}`}
 		>
 			<div className="w-[80vw] mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">

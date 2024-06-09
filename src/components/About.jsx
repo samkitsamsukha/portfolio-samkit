@@ -37,7 +37,7 @@ const About = ({mode}) => {
 	return (
 		<div
 			name="about"
-			className={`w-full md:h-screen ${mode==='dark'?'bg-gradient-to-b from-gray-800 to-black text-white':'bg-gradient-to-b from-gray-400 to-white text-gray-900'}`}
+			className={`w-full md:h-screen ${mode==='dark'?'bg-gradient-to-b from-gray-800 to-black text-white':'bg-gradient-to-b from-gray-300  to-white text-gray-900'}`}
 		>
 			<div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-ful h-full">
 				<motion.div 
