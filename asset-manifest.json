@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio-samkit/static/css/main.43f74fe6.css",
-    "main.js": "/portfolio-samkit/static/js/main.bb411ab0.js",
+    "main.css": "/portfolio-samkit/static/css/main.81d966e3.css",
+    "main.js": "/portfolio-samkit/static/js/main.a0a1246c.js",
     "static/media/dailydispatch.png": "/portfolio-samkit/static/media/dailydispatch.81e38e8cc65c32cbc686.png",
     "static/media/codehelp.png": "/portfolio-samkit/static/media/codehelp.0022ddaa009f6f72e9c4.png",
     "static/media/rfiddirect.png": "/portfolio-samkit/static/media/rfiddirect.ba5d085d259015b43d55.png",
     "static/media/expense.png": "/portfolio-samkit/static/media/expense.aa689e849046565541a1.png",
     "static/media/textutils.png": "/portfolio-samkit/static/media/textutils.a07fdef5be80cc3f4e7f.png",
     "static/media/heroImage.jpg": "/portfolio-samkit/static/media/heroImage.d741f087aa22f9cd56e4.jpg",
+    "static/media/mongodb.png": "/portfolio-samkit/static/media/mongodb.385b4ec7a41fbe01efd2.png",
     "static/media/react.png": "/portfolio-samkit/static/media/react.0cf951a69d8e58f83f9d.png",
-    "static/media/nextjs.png": "/portfolio-samkit/static/media/nextjs.48ddc8121a0fcb543d64.png",
+    "static/media/nextjs.png": "/portfolio-samkit/static/media/nextjs.37ce8fc7b8f8dd2ce994.png",
     "static/media/github.png": "/portfolio-samkit/static/media/github.3b9e32903aa89111875d.png",
     "static/media/html.png": "/portfolio-samkit/static/media/html.2ba4fabc69a89a8f71e6.png",
     "static/media/tailwind.png": "/portfolio-samkit/static/media/tailwind.e47ac876b8d4d0bba47a.png",
@@ -17,15 +18,18 @@
     "static/media/c.png": "/portfolio-samkit/static/media/c.272d1cfdb06887e8671d.png",
     "static/media/css.png": "/portfolio-samkit/static/media/css.69a82c2d9e45c933a9cb.png",
     "static/media/cpp.png": "/portfolio-samkit/static/media/cpp.2de0ae20980cffd2da09.png",
+    "static/media/nextjsdm.png": "/portfolio-samkit/static/media/nextjsdm.b5b52c74d11dd9d10318.png",
+    "static/media/githublm.png": "/portfolio-samkit/static/media/githublm.c219a333563622085f6d.png",
     "static/media/bootstrap.png": "/portfolio-samkit/static/media/bootstrap.602d194d2e51dd737c29.png",
+    "static/media/expressdm.png": "/portfolio-samkit/static/media/expressdm.1bf015f68c19ec2df22a.png",
     "static/media/express.png": "/portfolio-samkit/static/media/express.551b076d3a202df33a0c.png",
     "static/media/javascript.png": "/portfolio-samkit/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio-samkit/index.html",
-    "main.43f74fe6.css.map": "/portfolio-samkit/static/css/main.43f74fe6.css.map",
-    "main.bb411ab0.js.map": "/portfolio-samkit/static/js/main.bb411ab0.js.map"
+    "main.81d966e3.css.map": "/portfolio-samkit/static/css/main.81d966e3.css.map",
+    "main.a0a1246c.js.map": "/portfolio-samkit/static/js/main.a0a1246c.js.map"
   },
   "entrypoints": [
-    "static/css/main.43f74fe6.css",
-    "static/js/main.bb411ab0.js"
+    "static/css/main.81d966e3.css",
+    "static/js/main.a0a1246c.js"
   ]
 }
