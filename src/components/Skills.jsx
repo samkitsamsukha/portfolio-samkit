@@ -123,7 +123,7 @@ const Skills = (props) => {
 	return (
 		<div
 			name="skills"
-			className={`bg-gradient-to-b ${props.mode==='dark'?' from-black to-gray-800 text-white':' from-white to-gray-300 text-gray-900'} w-full h-screen`}
+			className={`bg-gradient-to-b ${props.mode==='dark'?' sm:from-black sm:to-gray-800 md:from-gray-800 md:to-black text-white':' sm:from-white sm:to-gray-300 md:from-gray-300 md:to-white text-gray-900'} w-full h-screen`}
 		>
 			<div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
 				<motion.div

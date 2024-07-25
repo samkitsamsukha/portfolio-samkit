@@ -1,7 +1,9 @@
+// FIX WHITE BG OF CONTACT FORM
+
 import React from "react";
 import { motion } from "framer-motion";
-import { Slide, ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { Slide, ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact(props) {
 	const [result, setResult] = React.useState("");
@@ -27,11 +29,10 @@ export default function Contact(props) {
 			console.log("Error", data);
 			setResult(data.message);
 		}
-		
 	};
 
-	const notify = ()  => {
-		toast.success('Submitted Successfully!', {
+	const notify = () => {
+		toast.success("Submitted Successfully!", {
 			position: "top-center",
 			autoClose: 5000,
 			hideProgressBar: false,
@@ -41,16 +42,16 @@ export default function Contact(props) {
 			progress: undefined,
 			theme: "dark",
 			transition: Slide,
-			});
-	}
+		});
+	};
 
 	return (
 		<div
 			name="contact"
 			className={`bg-gradient-to-b ${
 				props.mode === "dark"
-					? "from-gray-800 to-black text-white"
-					: "from-gray-300 to-white text-gray-900"
+					? " sm:from-black sm:to-gray-800 md:from-black md:to-gray-800 text-white"
+					: " sm:from-white sm:to-gray-300 md:from-white md:to-gray-300 text-gray-900"
 			} w-full h-screen p-4`}
 		>
 			<div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
@@ -60,7 +61,13 @@ export default function Contact(props) {
 					initial={{ x: -100, opacity: 0 }}
 					transition={{ duration: 0.5 }}
 				>
-					<p className={`text-4xl font-bold inline border-b-4 border-gray-500 bg-gradient-to-r bg-clip-text tracking-tight text-transparent ${props.mode === "dark" ?  "from-blue-300 to-pink-300 via-purple-300" : "from-blue-600 to-pink-600 via-purple-600"}`}>
+					<p
+						className={`text-4xl font-bold inline border-b-4 border-gray-500 bg-gradient-to-r bg-clip-text tracking-tight text-transparent ${
+							props.mode === "dark"
+								? "from-blue-300 to-pink-300 via-purple-300"
+								: "from-blue-600 to-pink-600 via-purple-600"
+						}`}
+					>
 						Contact
 					</p>
 					<p className="text-xl py-6">
@@ -77,7 +84,9 @@ export default function Contact(props) {
 							type="text"
 							name="name"
 							placeholder="Enter your name"
-							className="p-2 bg-transparent bg-white border border-gray-400 rounded-md focus:outline-none"
+							className={`p-2 bg-transparent ${
+								props.mode === "dark" ? "bg-transparent" : "bg-white"
+							} border border-gray-400 rounded-md focus:outline-none`}
 							required
 						/>
 						<motion.input
@@ -87,7 +96,9 @@ export default function Contact(props) {
 							type="email"
 							name="email"
 							placeholder="Enter your email"
-							className="my-4 p-2 bg-transparent border bg-white border-gray-400 rounded-md focus:outline-none"
+							className={`my-4 p-2 bg-transparent border ${
+								props.mode === "dark" ? "bg-transparent" : "bg-white"
+							} border-gray-400 rounded-md focus:outline-none`}
 							required
 						/>
 						<motion.textarea
@@ -97,7 +108,9 @@ export default function Contact(props) {
 							name="message"
 							rows="10"
 							placeholder="Enter your message"
-							className="p-2 bg-transparent border bg-white border-gray-400 rounded-md  focus:outline-none"
+							className={`p-2 bg-transparent border ${
+								props.mode === "dark" ? "bg-transparent" : "bg-white"
+							} border-gray-400 rounded-md  focus:outline-none`}
 							required
 						></motion.textarea>
 
@@ -117,7 +130,7 @@ export default function Contact(props) {
 					{result}
 				</span>
 			</div>
-			<ToastContainer/>
+			<ToastContainer />
 		</div>
 	);
 }

@@ -9,7 +9,7 @@ const CodingProfile = (props) => {
 				props.mode === "dark"
 					? "from-gray-800 to-black text-white"
 					: "from-gray-300 to-white text-gray-900"
-			} w-full h-screen p-4`}
+			} w-full h-screen p-4 md:hidden`}
 		>
 			<div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
 				<motion.div

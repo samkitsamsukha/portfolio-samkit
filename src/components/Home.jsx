@@ -69,7 +69,7 @@ const Home = (props) => {
 					<img
 						src={HeroImage}
 						alt="my profile"
-						className="rounded-full mx-auto w-3/4 md:w-5/6 shadow-purple-500 shadow-md"
+						className="rounded-full mx-auto w-full md:w-5/6 shadow-purple-500 shadow-md"
 					/>
 				</motion.div>
 			</div>
