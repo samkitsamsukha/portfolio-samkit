@@ -36,14 +36,14 @@ const Navbar = (props) => {
 		<div className={`flex justify-between items-center w-full z-10 h-20 fixed ${props.mode==='dark'?'text-white bg-black':'text-black bg-white'} px-4`}>
 			
             <div>
-				<h1 className="text-5xl font-signature ml-2">Samkit Samsukha</h1>
+				<h1 className={`text-5xl font-signature ml-2  ${props.mode === 'dark'? 'text-gray-300':'text-gray-600'}`}>samkit samsukha</h1>
 			</div>
 			
             <ul className="hidden md:flex md:justify-center md:items-center">
                 {links.map(({ id, link }) => (
                     <li
                         key={id}
-                        className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-blue-300 duration-200"
+                        className={`px-4 cursor-pointer capitalize font-medium ${props.mode === 'dark'? 'text-gray-300':'text-gray-600'} hover:scale-105 hover:text-blue-300 duration-200`}
                     >
                         <Link to={link} smooth duration={800}>{link}</Link>
                     </li>
