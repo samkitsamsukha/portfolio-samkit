@@ -50,8 +50,8 @@ export default function Contact(props) {
 			name="contact"
 			className={`bg-gradient-to-b ${
 				props.mode === "dark"
-					? " sm:from-black sm:to-gray-800 md:from-black md:to-gray-800 text-white"
-					: " sm:from-white sm:to-gray-300 md:from-white md:to-gray-300 text-gray-900"
+					? " from-gray-800 to-black md:from-black md:to-gray-800 text-white"
+					: " from-gray-300 to-white md:from-white md:to-gray-300 text-gray-900"
 			} w-full h-screen p-4`}
 		>
 			<div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">

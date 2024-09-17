@@ -38,7 +38,7 @@ const SocialLinks = (props) => {
 			id: 5,
 			text: "Leetcode",
 			disp: <SiLeetcode size={30} color={`${props.mode==='dark'?'white':'black'}`} />,
-			href: "https://leetcode.com/u/samkitsamsukha/",
+			href: "https://leetcode.com/u/samdoesdev/",
 		},
 		{
 			id: 6,

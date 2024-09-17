@@ -29,7 +29,7 @@ const About = ({ mode }) => {
 			logo: <MdSchool size={25} />,
 			institution: "R.V. College of Engineering",
 			date: "2023-2027(expected)",
-			grade: "CGPA - 9.6(upto first semester)",
+			grade: "CGPA - 9.53 (upto second semester)",
 			course: "Bachelors of Engineering in Information Science",
 		},
 	];
