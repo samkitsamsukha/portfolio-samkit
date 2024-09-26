@@ -86,7 +86,7 @@ const Portfolio = ({ mode }) => {
 							className={`shadow-md rounded-lg shadow-gray-600 ${
 								mode === "dark"
 									? "bg-gradient-to-t from-gray-950 to-gray-800 via-gray-900"
-									: "bg-gradient-to-t from-gray-400 to-white via-gray-300"
+									: "bg-gradient-to-t from-gray-300 to-white via-gray-100"
 							}`}
 						>
 							<img

@@ -39,7 +39,7 @@ const Navbar = (props) => {
 		>
 			<div>
 				<h1
-					className={`text-5xl font-signature ml-2  ${
+					className={`font-signature ml-2 text-3xl sm:text-5xl  ${
 						props.mode === "dark" ? "text-gray-300" : "text-gray-600"
 					}`}
 				>
