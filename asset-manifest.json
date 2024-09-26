@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-samkit/static/css/main.61f93d81.css",
-    "main.js": "/portfolio-samkit/static/js/main.0a66dcde.js",
+    "main.css": "/portfolio-samkit/static/css/main.adafa440.css",
+    "main.js": "/portfolio-samkit/static/js/main.625b6dee.js",
     "static/media/dailydispatch.png": "/portfolio-samkit/static/media/dailydispatch.81e38e8cc65c32cbc686.png",
     "static/media/codehelp.png": "/portfolio-samkit/static/media/codehelp.0022ddaa009f6f72e9c4.png",
     "static/media/rfiddirect.png": "/portfolio-samkit/static/media/rfiddirect.ba5d085d259015b43d55.png",
@@ -25,11 +25,11 @@
     "static/media/express.png": "/portfolio-samkit/static/media/express.551b076d3a202df33a0c.png",
     "static/media/javascript.png": "/portfolio-samkit/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio-samkit/index.html",
-    "main.61f93d81.css.map": "/portfolio-samkit/static/css/main.61f93d81.css.map",
-    "main.0a66dcde.js.map": "/portfolio-samkit/static/js/main.0a66dcde.js.map"
+    "main.adafa440.css.map": "/portfolio-samkit/static/css/main.adafa440.css.map",
+    "main.625b6dee.js.map": "/portfolio-samkit/static/js/main.625b6dee.js.map"
   },
   "entrypoints": [
-    "static/css/main.61f93d81.css",
-    "static/js/main.0a66dcde.js"
+    "static/css/main.adafa440.css",
+    "static/js/main.625b6dee.js"
   ]
 }
