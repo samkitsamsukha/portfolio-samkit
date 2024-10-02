@@ -57,16 +57,16 @@ const Portfolio = ({ mode }) => {
 
 	return (
 		<div
-			name="portfolio"
 			className={`pt-[70px] ${
 				mode === "dark"
 					? "bg-gradient-to-b from-black to-gray-800 text-white"
 					: "bg-gradient-to-b from-white to-gray-300 text-gray-900"
 			} w-full md:h-screen `}
 		>
-			<div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+			<div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-screen">
 				<motion.div
-					className="pb-8"
+					name="portfolio"
+					className="pb-8 pt-24"
 					whileInView={{ x: 0, opacity: 1 }}
 					initial={{ x: -100, opacity: 0 }}
 					transition={{ duration: 0.5 }}
@@ -92,23 +92,17 @@ const Portfolio = ({ mode }) => {
 							<img
 								src={src}
 								alt=""
-								className="rounded-md duration-200 hover:scale-105 w-auto h-auto"
+								className="rounded-md duration-200 hover:scale-105 max-w-full h-auto"
 							/>
 							<div className="flex flex-col items-center">
-								<p
-									className={`text-xl ${
-										mode === "dark" ? "text-blue-300" : "text-blue-900"
-									} pt-2 font-semibold hover:scale-105 duration-300`}
-								>
+								<p className={`text-lg sm:text-xl ${mode === "dark" ? "text-blue-300" : "text-blue-900"} pt-2 font-semibold hover:scale-105 duration-300`}>
 									{title}
 								</p>
 								<div className="flex flex-wrap justify-center space-x-2 my-2">
 									{tech.map((item, index) => (
 										<span
 											key={index}
-											className={`px-2 py-1 ${
-												mode === "dark" ? "bg-gray-700" : "bg-gray-100"
-											} rounded-xl text-[12px]`}
+											className={`px-2 py-1 ${mode === "dark" ? "bg-gray-700" : "bg-gray-100"} rounded-xl text-[12px]`}
 										>
 											{item}
 										</span>
@@ -117,14 +111,10 @@ const Portfolio = ({ mode }) => {
 								<p className="p-2 pb-0 text-[14px] text-center text-ellipsis">
 									{desc}
 								</p>
-								<div className=" mt-2 flex flex-row justify-center items-center w-full border-t-[0.5px]">
+								<div className="mt-2 flex flex-row justify-center items-center w-full border-t-[0.5px]">
 									<a
 										href={demo}
-										className={`w-1/2 px-2 border-r-[0.5px] m-2 text-center duration-200 hover:scale-105 ${
-											mode === "dark"
-												? "hover:text-blue-300"
-												: "hover:text-blue-800"
-										}`}
+										className={`w-1/2 px-2 border-r-[0.5px] m-2 text-center duration-200 hover:scale-105 ${mode === "dark" ? "hover:text-blue-300" : "hover:text-blue-800"}`}
 									>
 										Demo
 									</a>
@@ -133,11 +123,7 @@ const Portfolio = ({ mode }) => {
 										href={code}
 										target="__blank"
 										rel="noreferrer"
-										className={`w-1/2 px-2  m-2 text-center duration-200 hover:scale-105 ${
-											mode === "dark"
-												? "hover:text-blue-300"
-												: "hover:text-blue-800"
-										}`}
+										className={`w-1/2 px-2 m-2 text-center duration-200 hover:scale-105 ${mode === "dark" ? "hover:text-blue-300" : "hover:text-blue-800"}`}
 									>
 										Code
 									</a>
